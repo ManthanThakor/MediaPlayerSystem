@@ -1,0 +1,15 @@
+E:\manthan\MediaPlayerSystem\bin\Debug\net8.0\MediaPlayerSystem.exe
+E:\manthan\MediaPlayerSystem\bin\Debug\net8.0\MediaPlayerSystem.deps.json
+E:\manthan\MediaPlayerSystem\bin\Debug\net8.0\MediaPlayerSystem.runtimeconfig.json
+E:\manthan\MediaPlayerSystem\bin\Debug\net8.0\MediaPlayerSystem.dll
+E:\manthan\MediaPlayerSystem\bin\Debug\net8.0\MediaPlayerSystem.pdb
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\MediaPlayerSystem.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\MediaPlayerSystem.AssemblyInfoInputs.cache
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\MediaPlayerSystem.AssemblyInfo.cs
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\MediaPlayerSystem.csproj.CoreCompileInputs.cache
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\MediaPlayerSystem.sourcelink.json
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\MediaPlayerSystem.dll
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\refint\MediaPlayerSystem.dll
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\MediaPlayerSystem.pdb
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\MediaPlayerSystem.genruntimeconfig.cache
+E:\manthan\MediaPlayerSystem\obj\Debug\net8.0\ref\MediaPlayerSystem.dll
