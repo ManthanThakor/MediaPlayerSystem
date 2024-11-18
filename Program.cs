@@ -9,37 +9,79 @@ namespace mediaPlayersystem
         void Stop();
     }
 
-    public class 
+    public class MediaPlayer : IMediaPlayer
+    {
+        public string MediaType { get; set; }
 
-    public class AudioPlayer : IMediaPlayer
+        public MediaPlayer(string mediaType)
+        {
+            MediaType = mediaType;
+        }
+
+        public virtual void Play()
+        {
+            Console.WriteLine("Playing media.");
+        }
+
+        public virtual void Pause()
+        {
+            Console.WriteLine("Media paused.");
+        }
+
+        public virtual void Stop()
+        {
+            Console.WriteLine("Media stopped.");
+        }
+    }
+
+    public class AudioPlayer : MediaPlayer
     {
         public string AudioFormat { get; set; }
 
-        public AudioPlayer(string audioFormat)
+        public AudioPlayer(string audioFormat) : base("Audio")
         {
             this.AudioFormat = audioFormat;
         }
 
-        public void Play()
+        public override void Play()
         {
-            Console.WriteLine($"Playing  audio in {AudioFormat} Format");
+            Console.WriteLine($"Playing Audio in {AudioFormat} Format");
         }
 
-        public void Pause()
+        public override void Pause()
         {
-            Console.WriteLine("Audio paused.")
+            Console.WriteLine("Audio paused.");
         }
 
-        public void Stop()
+        public override void Stop()
         {
-            Console.WriteLine("Video stopped.");
+            Console.WriteLine("Audio stopped.");
         }
     }
 
-    public class VideoPlayer : IMediaPlayer
+    public class VideoPlayer : MediaPlayer
     {
-        public string VideoFormat { get; set; }
+        public string Resolution { get; set; }
 
+        public VideoPlayer(string resolution) : base("Video")
+        {
+            this.Resolution = resolution;
+        }
+
+        public override void Play()
+        {
+            Console.WriteLine($"Playing video in {Resolution} resolution.");
+        }
+
+        public override void Pause()
+        {
+            Console.WriteLine("Video paused.");
+        }
+
+        public override void Stop()
+        {
+            Console.WriteLine("Video stopped.");
+        }
     }
 
     class Program
@@ -47,6 +89,18 @@ namespace mediaPlayersystem
         static void Main(string[] args)
         {
             Console.WriteLine("\n\"Media PLayer System\"\n");
+
+            IMediaPlayer audioPlayer = new AudioPlayer("Mp3");
+            audioPlayer.Play();
+            audioPlayer.Pause();
+            audioPlayer.Stop();
+
+            Console.WriteLine(" ");
+
+            IMediaPlayer videoPlayer = new VideoPlayer("1080");
+            videoPlayer.Play();
+            videoPlayer.Pause();
+            videoPlayer.Stop();
 
             Console.ReadLine();
 
